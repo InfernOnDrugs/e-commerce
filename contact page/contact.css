@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+	position: relative;
+}
+nav{
+	display: flex;
+	align-items: center;
+	/* position: relative; */
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 0px 1px rgba(155, 216, 228, 0.1),
+	            0px 5px 5px 2px rgba(154, 207, 206, 0.1),
+	            0px 10px 10px 1px rgba(169, 226, 220, 0.1);
+}
+.nav1{
+	width: 50%;
+}
+.nav1 ul{
+	display: flex;
+	list-style-type: none;
+	gap: 1.8rem;
+	justify-content: left;
+}
+.nav1 ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: small;
+}
+.nav1 ul li a:hover{
+	color:  rgba(14, 188, 194, 0.922);
+}
+.btn1{
+	display: flex;
+	align-items: center;
+}
+.btn1 span a{
+	border-style: none;
+	background-color:  rgba(14, 188, 194, 0.922);
+	text-decoration: none;
+	padding: 0.4rem 0.5rem;
+	color: white;
+	outline: none;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn1 a:hover{
+	cursor: pointer;
+	background-color:  rgba(14, 188, 194, 0.922)
+}
+.btn1 span{
+	margin-right: 30px;
+}
+.btn1 a:active{
+	scale: 0.95;
+}
+.bi-list{
+	color:  rgba(14, 188, 194, 0.922);
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.bi-x{
+	color:  rgba(14, 188, 194, 0.922);
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+.form{
+	border: 1px solid rgba(10, 133, 137, 0.375);
+	box-shadow:0 0 10px rgba(10, 133, 137, 0.144); 
+	margin: 100px auto;
+	max-width: 400px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background-color:  rgba(13, 203, 209, 0.041);
+}
+.header{
+	display: flex;
+	align-items: center;
+	padding: 15px 0px 0px 60px;
+	font-size: 13px;
+}
+.header a{
+	color:  rgba(14, 188, 194, 0.922);
+	text-decoration: none;
+}
+.form input{
+	font-size: 13px;
+}
+.form h4{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#email{
+	padding: 10px 140px 5px 40px;
+  border: 1px solid;
+	border-color:rgba(10, 133, 137, 0.375);
+	position: relative;
+	outline: none;
+	align-items: center;
+	background-color: transparent;
+}
+.form .deets2 #message{
+	margin-top: 20px;
+  border: 1px solid;
+	width: 340px;
+	border-color:rgba(10, 133, 137, 0.448);
+	background-color: transparent;
+}
+.deets1 #icon1{
+ position: absolute;	
+ align-items: center;
+ color: rgba(14, 188, 194, 0.922);
+ padding: 8px;
+}
+.deets2 textarea::placeholder{
+	padding-left: 40px;
+	padding-top: 9px;
+}
+#password2{
+	margin-top: 20px;
+  border: 1px solid;
+	padding: 10px 140px 5px 40px;
+	border-color:rgba(10, 133, 137, 0.448);
+	background-color: transparent;
+}
+.deets3 #icon3{
+	position: absolute;	
+	top: 20;
+	align-items: center;
+	color: rgba(14, 188, 194, 0.922);
+	margin-top: 20px;
+	padding: 7px;
+}
+#email2{
+	margin-top: 20px;
+  border: 1px solid;
+	padding: 10px 140px 5px 40px;
+	border-color:rgba(10, 133, 137, 0.448);
+	background-color: transparent;
+}
+.deets4 #icon4{
+	position: absolute;	
+	top: 20;
+	align-items: center;
+	color: rgba(14, 188, 194, 0.922);
+	margin-top: 20px;
+	padding: 7px;
+}
+.form .sub{
+	margin-top: 30px;
+	text-align: center;
+}
+.form .sub input{
+	padding: 10px 20px 10px 20px;
+	background-color:  rgba(14, 188, 194, 0.922);
+	border: none;
+	color: white;
+}
+.form .sub input:hover{
+	background-color: rgba(11, 95, 98, 0.807);
+	cursor: pointer;
+}
+footer{
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	max-height: fit-content;
+}
+.footer{
+	background-color: rgb(40, 39, 39);
+}
+.categories{
+	/* display: flex;
+	flex-direction: column; */
+	gap: -8rem;
+	padding: 15px 0px 20px 0;
+}
+.categories h3{
+	color: white;
+	padding-top: 15px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.categories a{
+	text-decoration: none;
+	color: darkgray;
+	margin-left: 20px;
+	font-size: 11px;
+}
+.information{
+	/* display: flex;
+	flex-direction: column; */
+	gap: -8rem;
+	padding: 15px 0px 20px 0;
+}
+.information h3{
+	color: white;
+	padding-top: 15px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+.information a{
+	text-decoration: none;
+	color: darkgray;
+	margin-left: 20px;
+	font-size: 11px;
+}
+.contacts{
+	/* display: flex;
+	flex-direction: column; */
+	gap: -8rem;
+	padding: 15px 0px 20px 0;
+}
+.contacts h3{
+	color: white;
+	padding-top: 15px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+.contacts a{
+	text-decoration: none;
+	color: darkgray;
+	margin-left: 10px;
+	font-size: 11px;
+}
+.follow{
+	padding: 15px 0px 20px 0;
+}
+.follow .detts{
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	margin-left: 20px;
+}
+.follow .detts a{
+	text-decoration: none;
+	color: rgb(230, 224, 224);
+	font-size: 25px;
+}
+.follow h3{
+	color: white;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+@media(max-width:700px){
+	nav{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.bi-list{
+		display: block;
+	}
+	.nav1{
+	position: fixed;
+	top: 55px;
+	height: 7vh;
+	background-color: white;
+	width: 100%;
+	z-index: 10;
+	transition: all ease-in-out 500ms;
+	}
+	.nav1 ul{
+		justify-content: center;
+		display: flex;
+		gap: 2rem;
+	}
+	.bi-x{
+		display: block;
+	}
+	.hide{
+		display: none;
+	}
+	.hidden{
+		opacity: 0
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	
+}
+
